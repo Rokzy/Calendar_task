@@ -6,74 +6,97 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Document</title>
+    <title>calendar</title>
 </head>
 <body>
     
-    <div   class="container">
-        <div class="calendar">
-            <div class="month">
-                <i class="fas fa-angle-left prev"></i>
-                <div class="date">
-                    November 2025
+    <div class="container">
+        <div class="left">
+
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                        </div>
+                    <i class="fas fa-angle-right next"></i>
                 </div>
-                <i class="fas fa-angle-right next"></i>
-            </div>
-            <div class="weekdays">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="days">
-                <div class="day prev-date">27</div>
-                <div class="day prev-date">28</div>
-                <div class="day prev-date">29</div>
-                <div class="day prev-date">30</div>
-                <div class="day prev-date">31</div>   
-                <div class="day">1</div>
-                <div class="day">2</div>
-                <div class="day">3</div>
-                <div class="day">4</div>
-                <div class="day">5</div>
-                <div class="day event">6</div>
-                <div class="day">7</div>
-                <div class="day">8</div>
-                <div class="day active">9</div>
-                <div class="day today">10</div>
-                <div class="day">11</div>
-                <div class="day">12</div>
-                <div class="day">13</div>
-                <div class="day">14</div>
-                <div class="day">15</div>
-                <div class="day">16</div>
-                <div class="day">17</div>
-                <div class="day event">18</div>
-                <div class="day">19</div>
-                <div class="day">20</div>
-                <div class="day">21</div>
-                <div class="day">22</div>
-                <div class="day">23</div>
-                <div class="day">24</div>
-                <div class="day">25</div>
-                <div class="day">26</div>
-                <div class="day">27</div>
-                <div class="day">28</div>
-                <div class="day">29</div>
-                <div class="day">30</div>
-                <div class="day">31</div>
-                <div class="day next-date">1</div>
-                <div class="day next-date">2</div>
-                <div class="day next-date">3</div>
-                <div class="day next-date">4</div>
-                <div class="day next-date">5</div>
-                <div class="day next-date">6</div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+                    </div>
+                <div class="goto-today">
+                    <button class="today-btn">Today</button>
                 </div>
             </div>
         </div>
+         <div class="right">
+            <div class="today-date">
+                <div class="event-day"></div> <div class="event-date"></div> 
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Add Event</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Game Title (e.g., Football Match)" class="event-name" />
+                    </div>
+                    <div class="add-event-input">
+                        <input
+                            type="text"
+                            placeholder="Team 1 Name"
+                            class="event-team-1"
+                        />
+                    </div>
+                    <div class="add-event-input">
+                        <input
+                            type="text"
+                            placeholder="Team 2 Name"
+                            class="event-team-2"
+                        />
+                    </div>
+                    <div class="add-event-input">
+                        <input
+                            type="text"
+                            placeholder="Game Time (e.g., 19:30)"
+                            class="event-time"
+                        />
+                    </div>
+                    <div class="add-event-input">
+                        <input
+                            type="text"
+                            placeholder="Team 1 Score"
+                            class="event-score-1"
+                        />
+                    </div>
+                    <div class="add-event-input">
+                        <input
+                            type="text"
+                            placeholder="Team 2 Score"
+                            class="event-score-2"
+                        />
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Add Event</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    
 
+    <script src="script.js"></script>
 </body>
 </html>
