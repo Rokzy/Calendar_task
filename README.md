@@ -68,5 +68,5 @@ Contributions are welcome! Feel free to fork the repository and submit a Pull Re
 4.	Push to the branch (git push origin feature/AmazingFeature).
 5.	Open a Pull Request.
 
-
+*created readme file with gemini
 
