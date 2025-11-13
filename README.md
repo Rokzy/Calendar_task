@@ -37,6 +37,7 @@ cd SportStat-Calendar
 
 ⚙️ Project Structure
 The project follows a standard file structure:
+
 SportStat-Calendar/
 ├── index.html        # Main HTML file for the calendar interface.
 ├── script.js         # Core JavaScript logic for calendar rendering and event management.
@@ -60,6 +61,7 @@ Once an event is added, it appears in the right-hand Events panel:
 •	The display shows the Team Names and the Game Time.
 •	If scores were entered, the score will be prominently displayed next to the time (e.g., 19:30 ➡️ 3 - 2).
 •	Scores can be updated by editing the event data in local storage (for advanced users) or simply deleting and re-adding the event with final scores.
+
 🤝 Contribution
 Contributions are welcome! Feel free to fork the repository and submit a Pull Request.
 1.	Fork the repository.
